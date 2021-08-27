@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin-top: 50px;
+}
+.userInfo {
+  margin-left: 150px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  border: black 3px solid;
+  height: 30px;
+}

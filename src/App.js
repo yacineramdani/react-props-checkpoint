@@ -1,25 +1,19 @@
-import logo from './logo.svg';
+import ProfileComponent from './profile/ProfileComponent';
 import './App.css';
+import ProfileImg from "./propic.jpg"
 
 function App() {
+  const handleName = (fullName) => {
+    alert(`Name of the profile user is ${fullName}`)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProfileComponent fullName="Afaf" profession="Developer" bio="I know everything" handleName={handleName}><img src={ProfileImg} alt="" /></ProfileComponent>
+      <ProfileComponent fullName="Yacine" profession="Developer" bio="I know nothing" handleName={handleName}><img src={ProfileImg} alt="" /></ProfileComponent>
+      <ProfileComponent/>
     </div>
   );
 }
+
 
 export default App;
